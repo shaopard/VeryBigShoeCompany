@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VeryBigShoeCompany.Common\VeryBigShoeCompany.Common.csproj" />
+    <ProjectReference Include="..\VeryBigShoeCompany.Repositories\VeryBigShoeCompany.Repositories.csproj" />
+    <ProjectReference Include="..\VeryBigShoeCompany.ServiceContracts\VeryBigShoeCompany.ServiceContracts.csproj" />
+    <ProjectReference Include="..\VeryBigShoeCompany.Services\VeryBigShoeCompany.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="XSD\OrderImport.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+
+</Project>

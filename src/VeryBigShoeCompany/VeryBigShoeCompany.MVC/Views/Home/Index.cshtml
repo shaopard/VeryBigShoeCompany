@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    ViewBag.DataRetrievalUrl = "http://localhost:39908/api/data/orders";
+    ViewBag.OrdersPrintUrl = "http://localhost:39908/api/data/orders/print";
+}
+@Html.ActionLink("Upload", "Upload", "Home")
+
+@*<button type="button" onclick="exportOrders()">Print</button>*@
+<a href="@(ViewBag.OrdersPrintUrl)" title="Print" download>Print</a>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+
+    <div id="jsGrid"></div>
+</div>
+
+<script>
+    $("#jsGrid").jsGrid({
+        width: "100%",
+        height: "400px",
+        autoload: true,
+
+        controller: {
+            loadData: function(filter) {
+                return $.ajax({
+                            type: "GET",
+                            url: "@(ViewBag.DataRetrievalUrl)",
+                            dataType: "json"
+                        });
+                    }
+        },
+
+        fields: [
+            { name: "customerName", type: "text", width: 150, headerTemplate: function() { return "Customer Name"; } },
+            { name: "customerEmail", type: "text", width: 150, headerTemplate: function() { return "Customer Email"; } },
+            { name: "quantity", type: "number", width: 50, headerTemplate: function() { return "Quantity"; } },
+            { name: "notes", type: "text", width: 150, headerTemplate: function() { return "Notes"; } },
+            { name: "size", type: "number", width: 50, headerTemplate: function() { return "Size"; } },
+            { name: "dateToShow", type: "text", width: 150, headerTemplate: function() { return "Date Required"; } },
+        ]
+    });
+
+    //const exportOrders = function() {
+    //    fetch("@(ViewBag.OrdersPrintUrl)")
+    //        .then((response) => {
+    //            if (!response.ok) {
+    //                throw new Error('Something went wrong');
+    //            }
+    //        })
+    //        .catch((err) => {
+    //            alert(err);
+    //        })
+    //    //$.fileDownload('@(ViewBag.OrdersPrintUrl)')
+    //    //.done(function () { alert('File download a success!'); })
+    //    //.fail(function () { alert('File download failed!'); });
+    //}
+
+</script>

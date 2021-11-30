@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VeryBigShoeCompany.RepositoryContracts\VeryBigShoeCompany.RepositoryContracts.csproj" />
+    <ProjectReference Include="..\VeryBigShoeCompany.ServiceContracts\VeryBigShoeCompany.ServiceContracts.csproj" />
+  </ItemGroup>
+
+</Project>

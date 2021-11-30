@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.31911.260
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C4B55E0F-525A-4F8F-B3D4-C7E3F3E6E665}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{45A3F10F-9FA6-4D37-8907-FFE1D2D3E6DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{F05C039D-80F0-4F97-AAC7-330F5A61B854}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{8A72D32F-2171-4E24-A512-BA7D6D23D673}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{C14A7D46-BAF9-422C-9A19-6177AF1CAE13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VeryBigShoeCompany.Common", "VeryBigShoeCompany.Common\VeryBigShoeCompany.Common.csproj", "{F6D67C60-918D-4780-803A-C80A556369D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VeryBigShoeCompany.Services", "VeryBigShoeCompany.Services\VeryBigShoeCompany.Services.csproj", "{92869C8C-5970-4D48-91F0-7D0A39BABA28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VeryBigShoeCompany.ServiceContracts", "VeryBigShoeCompany.ServiceContracts\VeryBigShoeCompany.ServiceContracts.csproj", "{9882773C-44BE-4AF1-BD49-C2574CF58266}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VeryBigShoeCompany.Repositories", "VeryBigShoeCompany.Repositories\VeryBigShoeCompany.Repositories.csproj", "{8979ECAE-1CB1-4954-9013-1C692F236C6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VeryBigShoeCompany.RepositoryContracts", "VeryBigShoeCompany.RepositoryContracts\VeryBigShoeCompany.RepositoryContracts.csproj", "{E0F4E1F2-2F88-4DED-8848-92BAA10B7B51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VeryBigShoeCompany.API", "VeryBigShoeCompany.API\VeryBigShoeCompany.API.csproj", "{E3FCB279-535F-4F64-A6AE-5EA4E4CC4A0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VeryBigShoeCompany.MVC", "VeryBigShoeCompany.MVC\VeryBigShoeCompany.MVC.csproj", "{0981A811-2199-47CE-B5D3-893E327FEB02}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6D67C60-918D-4780-803A-C80A556369D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6D67C60-918D-4780-803A-C80A556369D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6D67C60-918D-4780-803A-C80A556369D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6D67C60-918D-4780-803A-C80A556369D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92869C8C-5970-4D48-91F0-7D0A39BABA28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92869C8C-5970-4D48-91F0-7D0A39BABA28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92869C8C-5970-4D48-91F0-7D0A39BABA28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92869C8C-5970-4D48-91F0-7D0A39BABA28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9882773C-44BE-4AF1-BD49-C2574CF58266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9882773C-44BE-4AF1-BD49-C2574CF58266}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9882773C-44BE-4AF1-BD49-C2574CF58266}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9882773C-44BE-4AF1-BD49-C2574CF58266}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8979ECAE-1CB1-4954-9013-1C692F236C6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8979ECAE-1CB1-4954-9013-1C692F236C6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8979ECAE-1CB1-4954-9013-1C692F236C6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8979ECAE-1CB1-4954-9013-1C692F236C6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0F4E1F2-2F88-4DED-8848-92BAA10B7B51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0F4E1F2-2F88-4DED-8848-92BAA10B7B51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0F4E1F2-2F88-4DED-8848-92BAA10B7B51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0F4E1F2-2F88-4DED-8848-92BAA10B7B51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3FCB279-535F-4F64-A6AE-5EA4E4CC4A0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3FCB279-535F-4F64-A6AE-5EA4E4CC4A0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3FCB279-535F-4F64-A6AE-5EA4E4CC4A0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3FCB279-535F-4F64-A6AE-5EA4E4CC4A0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0981A811-2199-47CE-B5D3-893E327FEB02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0981A811-2199-47CE-B5D3-893E327FEB02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0981A811-2199-47CE-B5D3-893E327FEB02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0981A811-2199-47CE-B5D3-893E327FEB02}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{45A3F10F-9FA6-4D37-8907-FFE1D2D3E6DD} = {C4B55E0F-525A-4F8F-B3D4-C7E3F3E6E665}
+		{F05C039D-80F0-4F97-AAC7-330F5A61B854} = {C4B55E0F-525A-4F8F-B3D4-C7E3F3E6E665}
+		{8A72D32F-2171-4E24-A512-BA7D6D23D673} = {C4B55E0F-525A-4F8F-B3D4-C7E3F3E6E665}
+		{C14A7D46-BAF9-422C-9A19-6177AF1CAE13} = {C4B55E0F-525A-4F8F-B3D4-C7E3F3E6E665}
+		{F6D67C60-918D-4780-803A-C80A556369D2} = {C14A7D46-BAF9-422C-9A19-6177AF1CAE13}
+		{92869C8C-5970-4D48-91F0-7D0A39BABA28} = {F05C039D-80F0-4F97-AAC7-330F5A61B854}
+		{9882773C-44BE-4AF1-BD49-C2574CF58266} = {F05C039D-80F0-4F97-AAC7-330F5A61B854}
+		{8979ECAE-1CB1-4954-9013-1C692F236C6D} = {8A72D32F-2171-4E24-A512-BA7D6D23D673}
+		{E0F4E1F2-2F88-4DED-8848-92BAA10B7B51} = {8A72D32F-2171-4E24-A512-BA7D6D23D673}
+		{E3FCB279-535F-4F64-A6AE-5EA4E4CC4A0A} = {45A3F10F-9FA6-4D37-8907-FFE1D2D3E6DD}
+		{0981A811-2199-47CE-B5D3-893E327FEB02} = {45A3F10F-9FA6-4D37-8907-FFE1D2D3E6DD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57709A39-F2D1-409A-AB42-E17482271D18}
+	EndGlobalSection
+EndGlobal

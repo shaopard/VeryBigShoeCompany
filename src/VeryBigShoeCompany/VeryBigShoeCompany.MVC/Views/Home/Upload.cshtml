@@ -1,0 +1,72 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Upload";
+    ViewBag.FileUploadURL = "http://localhost:39908/api/upload/upload";
+}
+
+<style>
+    .red-text {
+        color: #ff0000;
+    }
+    .green-text {
+        color: #00ff00;
+    }
+</style>
+
+<h2>Upload XML</h2>
+@Html.ActionLink("Home", "Index", "Home")
+
+<br />
+<br />
+
+<div id="fileUpload">
+    <form action="@ViewBag.FileUploadURL" method="post" enctype="multipart/form-data">
+        <input name="uploadedFile" type="file" accept=".xml" id="uploadedFile" />
+        <input type="submit" value="Upload" name="upload" />
+    </form>
+</div>
+<p id="updateStatus">
+</p>
+
+<script>
+    const cleanUpdateStatus = function() {
+        $("#updateStatus").removeClass("green-text");
+        $("#updateStatus").removeClass("red-text");
+        $("#updateStatus").text("");
+    }
+
+    $("#fileUpload").on("change", function() {
+        cleanUpdateStatus();
+    });
+
+    $("#fileUpload").submit(function(event) {
+        event.preventDefault();
+
+        let form = new FormData();
+        let files = $('#uploadedFile')[0].files;
+        if(files.length > 0) {
+            form.append('uploadedFile',files[0]);
+
+            let url = "@(ViewBag.FileUploadURL)";
+
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: form,
+                contentType: false,
+                processData: false,
+
+                success: function(data) {
+                    $("#updateStatus").addClass("green-text").text("File upload successful.");
+                },
+
+                error: function(data) {
+                    let errorMessage = JSON.parse(data.responseText).detail;
+                    $("#updateStatus").addClass("red-text").text(errorMessage);
+                }
+            })
+        }
+    });
+</script>
