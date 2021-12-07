@@ -39,7 +39,7 @@ namespace VeryBigShoeCompany.API
                 options.AddPolicy(name: "AllowOrigin",
                     builder =>
                     {
-                        builder.WithOrigins("http://localhost:3839")
+                        builder.WithOrigins(Configuration.GetSection("AllowedOrigin").Get<string[]>())
                             .AllowAnyHeader()
                             .AllowAnyMethod();
                     });
